@@ -4,7 +4,6 @@ const port = 5002
 // initializing installed dependencies
 const express = require('express')
 require('dotenv').config()
-var indexRouter = require('../routes/index');
 const app = express()
 const cors = require('cors')
 
@@ -63,8 +62,3 @@ app.get('/', (req,res)=>{
       .catch(console.error);;
 
 })
-
-
-app.use('/', indexRouter);
-
-module.exports = app;
