@@ -1,3 +1,20 @@
+// vercel.json
+
+{
+  "version": 2,
+  "builds": [
+   {
+       "src": "./index.js",
+       "use": "@vercel/node"
+   }
+  ],
+  "routes": [
+   {
+       "src": "/(.*)",
+       "dest": "/"
+   }
+  ]
+}
 // defining the server port
 const port = 5002
 
